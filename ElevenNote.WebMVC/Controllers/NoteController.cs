@@ -73,6 +73,8 @@ namespace ElevenNote.WebMVC.Controllers
         }
 
         // POST: Note/Edit/{id}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, NoteEdit model)
         {
             if (!ModelState.IsValid)
