@@ -53,7 +53,7 @@ namespace ElevenNote.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.Categories.SingleOrDefault(e => e.CategoryId == categoryId && e.CreatorId == _userId);
+                var entity = ctx.Categories.SingleOrDefault(e => e.CategoryId == categoryId);
 
                 return
                     new CategoryDetail
