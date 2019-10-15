@@ -72,7 +72,7 @@ namespace ElevenNote.WebAPI.Controllers
 
         [HttpPut]
         [Route("{id}/Star")]
-        public bool ToggleStarOn(int id)
+        public bool ToggleStar(int id)
         {
             var service = CreateNoteService();
 
